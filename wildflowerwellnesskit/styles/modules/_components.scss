@@ -1,0 +1,53 @@
+.button {
+  display: inline-flex;
+  align-items: stretch;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: $font-regular;
+  letter-spacing: 1px;
+  padding: 1.2rem 4rem;
+  box-shadow: -3px 3px 1rem 1px rgba($color-sub, 0.1);
+  transition: all 0.3s;
+  cursor: pointer;
+  backface-visibility: hidden;
+
+  @include media-queries(atMediumLarge) {
+    font-size: 1.3rem;
+  }
+
+  &--main {
+    color: $color-dark;
+    background-color: $color-main;
+
+    & > svg {
+      fill: $color-dark;
+    }
+  }
+
+  &--sub {
+    color: $color-bg;
+    background-color: $color-sub;
+
+    & > svg {
+      fill: $color-bg;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: -3px 1px 1rem rgba($color-sub, 0.3);
+  }
+
+  & > svg {
+    height: 1.6rem;
+    width: 1.6rem;
+    position: relative;
+    bottom: -0.2rem;
+  }
+}

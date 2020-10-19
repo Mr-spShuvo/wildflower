@@ -1,0 +1,133 @@
+/*_______________________________________
+Media Queries (Mobile-first Approach):
+    0-400px: Default
+    (min-width: 480px) - atSmall
+    (min-width: 600px) - atMedium
+    (min-width: 900px) - atMediumLarge
+    (min-width: 1200px) - atLarge
+    (min-width: 1920px) - atLarger
+_______________________________________*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Lato", Arial, Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+  color: inherit;
+  font-size: inherit;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 50%;
+}
+
+@media only screen and (min-width: 480px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 1.45rem;
+}
+
+.button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  padding: 1.2rem 4rem;
+  -webkit-box-shadow: -3px 3px 1rem 1px rgba(84, 106, 98, 0.1);
+          box-shadow: -3px 3px 1rem 1px rgba(84, 106, 98, 0.1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+@media only screen and (min-width: 900px) {
+  .button {
+    font-size: 1.3rem;
+  }
+}
+
+.button--main {
+  color: #444;
+  background-color: #a3d4c2;
+}
+
+.button--main > svg {
+  fill: #444;
+}
+
+.button--sub {
+  color: #eefff9;
+  background-color: #546a62;
+}
+
+.button--sub > svg {
+  fill: #eefff9;
+}
+
+.button:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.button:active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-box-shadow: -3px 1px 1rem rgba(84, 106, 98, 0.3);
+          box-shadow: -3px 1px 1rem rgba(84, 106, 98, 0.3);
+}
+
+.button > svg {
+  height: 1.6rem;
+  width: 1.6rem;
+  position: relative;
+  bottom: -0.2rem;
+}
+
+.content-box {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.d-none {
+  display: none;
+  opacity: 0;
+}
+
+.visible {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+/*# sourceMappingURL=app.css.map */
