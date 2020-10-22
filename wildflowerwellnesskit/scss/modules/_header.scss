@@ -1,0 +1,25 @@
+.header {
+  background: $color-bg;
+  height: 100vh;
+  position: relative;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 0;
+    position: relative;
+    z-index: 11;
+  }
+
+  &__seen {
+    position: absolute;
+    bottom: 3.5rem;
+    right: 6rem;
+
+    img {
+      display: block;
+      width: 600px;
+    }
+  }
+}

@@ -7,127 +7,553 @@ Media Queries (Mobile-first Approach):
     (min-width: 1200px) - atLarge
     (min-width: 1920px) - atLarger
 _______________________________________*/
+/* line 1, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_base.scss */
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "Lato", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  font-family: 'Lato';
   text-rendering: optimizeLegibility;
   color: inherit;
   font-size: inherit;
   scroll-behavior: smooth;
 }
 
+/* line 12, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_base.scss */
 html {
   font-size: 50%;
 }
 
 @media only screen and (min-width: 480px) {
+  /* line 12, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_base.scss */
   html {
     font-size: 56.25%;
   }
 }
 
 @media only screen and (min-width: 1200px) {
+  /* line 12, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_base.scss */
   html {
     font-size: 62.5%;
   }
 }
 
 @media only screen and (min-width: 1920px) {
+  /* line 12, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_base.scss */
   html {
     font-size: 75%;
   }
 }
 
+/* line 28, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_base.scss */
 body {
   line-height: 1.6;
   font-weight: 400;
   font-size: 1.45rem;
+  color: #707070;
 }
 
+/* line 1, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_components.scss */
 .button {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: stretch;
+  justify-content: center;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 900;
   letter-spacing: 1px;
-  padding: 1.2rem 4rem;
-  -webkit-box-shadow: -3px 3px 1rem 1px rgba(84, 106, 98, 0.1);
-          box-shadow: -3px 3px 1rem 1px rgba(84, 106, 98, 0.1);
-  -webkit-transition: all 0.3s;
+  padding: 1.5rem 5rem;
   transition: all 0.3s;
   cursor: pointer;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  border: 3px solid #546a62;
 }
 
 @media only screen and (min-width: 900px) {
+  /* line 1, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_components.scss */
   .button {
     font-size: 1.3rem;
   }
 }
 
+/* line 23, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_components.scss */
 .button--main {
   color: #444;
   background-color: #a3d4c2;
 }
 
-.button--main > svg {
-  fill: #444;
+/* line 28, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_components.scss */
+.button--outline {
+  padding: 1rem 5rem;
+  color: #546a62;
+  border: 3px solid #546a62;
 }
 
-.button--sub {
-  color: #eefff9;
+/* line 33, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_components.scss */
+.button--outline:hover {
   background-color: #546a62;
+  color: #f7f7f7;
 }
 
-.button--sub > svg {
-  fill: #eefff9;
-}
-
+/* line 39, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_components.scss */
 .button:hover {
-  -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
+  opacity: 0.9;
+  text-decoration: none;
 }
 
-.button:active {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-  -webkit-box-shadow: -3px 1px 1rem rgba(84, 106, 98, 0.3);
-          box-shadow: -3px 1px 1rem rgba(84, 106, 98, 0.3);
-}
-
+/* line 44, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_components.scss */
 .button > svg {
-  height: 1.6rem;
-  width: 1.6rem;
-  position: relative;
-  bottom: -0.2rem;
+  height: 1.8rem;
+  width: 1.8rem;
+  stroke-width: 3px;
+  margin-right: 0.8rem;
 }
 
+/* line 1, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_utilities.scss */
 .content-box {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
 }
 
+/* line 7, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_utilities.scss */
+.container {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 13, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_utilities.scss */
 .d-none {
   display: none;
   opacity: 0;
 }
 
+/* line 18, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_utilities.scss */
 .visible {
   visibility: hidden !important;
   opacity: 0 !important;
 }
+
+/* line 23, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_utilities.scss */
+.section {
+  padding: 5rem 0;
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 23, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_utilities.scss */
+  .section {
+    padding: 8rem 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 23, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_utilities.scss */
+  .section {
+    padding: 10rem 0;
+  }
+}
+
+/* line 1, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_header.scss */
+.header {
+  background: #f5fffc;
+  height: 100vh;
+  position: relative;
+}
+
+/* line 6, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_header.scss */
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 0;
+  position: relative;
+  z-index: 11;
+}
+
+/* line 15, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_header.scss */
+.header__seen {
+  position: absolute;
+  bottom: 3.5rem;
+  right: 6rem;
+}
+
+/* line 20, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_header.scss */
+.header__seen img {
+  display: block;
+  width: 600px;
+}
+
+/* line 2, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+.hero > .content-box {
+  position: relative;
+}
+
+/* line 5, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+.hero__img {
+  position: absolute;
+  right: -5rem;
+  top: -5rem;
+}
+
+/* line 9, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+.hero__img img {
+  width: 52rem;
+}
+
+/* line 14, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+.hero__title {
+  font-family: "DM Serif Text", serif;
+  font-size: 4.2rem;
+  line-height: 1;
+  padding-top: 6rem;
+  color: #335449;
+}
+
+/* line 22, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+.hero__subtitle {
+  max-width: 45rem;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  margin: 1rem 0;
+}
+
+/* line 29, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+.hero__value {
+  position: relative;
+  max-width: 62rem;
+}
+
+/* line 33, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+.hero__value--real {
+  font-size: 2rem;
+  font-weight: 700;
+  position: absolute;
+  top: 2.5rem;
+}
+
+/* line 39, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+.hero__value--real span {
+  text-decoration: line-through;
+}
+
+/* line 44, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+.hero__value--offer {
+  color: #335449;
+  font-size: 5rem;
+  position: absolute;
+  left: 12rem;
+  top: 0;
+  font-weight: 900;
+  font-family: "DM Serif Text", serif;
+}
+
+/* line 54, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+.hero__value--sticker {
+  width: 12rem;
+  position: absolute;
+  right: -5rem;
+  top: -5rem;
+}
+
+/* line 62, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+.hero__form {
+  max-width: 55rem;
+  margin-top: 12rem;
+}
+
+/* line 67, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+.hero__form-learnmore {
+  padding: 1.4rem 5rem;
+  margin-left: 2rem;
+}
+
+/* line 1, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_form.scss */
+.form {
+  width: 100%;
+}
+
+/* line 4, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_form.scss */
+.form__group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+/* line 11, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_form.scss */
+.form input {
+  padding: 1.5rem;
+  flex-basis: 48%;
+  border: 3px solid #546a62;
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+/* line 18, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_form.scss */
+.form input:focus {
+  border-color: #a3d4c2;
+}
+
+/* line 22, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_form.scss */
+.form input::placeholder {
+  color: #546a62 !important;
+  opacity: 1;
+  /* Firefox */
+}
+
+/* line 2, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_package.scss */
+.package__img {
+  width: 100%;
+}
+
+/* line 6, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_package.scss */
+.package__right {
+  padding-left: 8rem;
+}
+
+/* line 10, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_package.scss */
+.package__title {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #a3d4c2;
+}
+
+/* line 17, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_package.scss */
+.package__info {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+/* line 23, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_package.scss */
+.package__features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 3rem;
+}
+
+/* line 29, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_package.scss */
+.package__features li {
+  margin: 1rem 0;
+}
+
+/* line 33, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_package.scss */
+.package__features li > a {
+  text-decoration: none;
+  color: #546a62;
+  font-size: 1.7rem;
+}
+
+/* line 39, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_package.scss */
+.package__features svg {
+  fill: #a3d4c2;
+  margin-right: 1rem;
+}
+
+/* line 1, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+.circle {
+  background-color: #f7f7f7;
+  padding: 16rem 0;
+}
+
+/* line 5, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+.circle__box {
+  text-align: center;
+  position: relative;
+}
+
+/* line 10, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+.circle__img {
+  width: 60%;
+}
+
+/* line 14, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+.circle__product {
+  position: absolute;
+}
+
+/* line 16, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+.circle__product p {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #546a62;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+/* line 23, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+.circle__product p span {
+  font-size: 1.7rem;
+  font-weight: 400;
+  display: block;
+  margin: 0;
+  color: #a3d4c2;
+}
+
+/* line 31, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+.circle__product--1 {
+  top: -5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* line 37, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+.circle__product--2 {
+  top: 39%;
+  left: 5rem;
+  text-align: right;
+}
+
+/* line 43, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+.circle__product--3 {
+  top: 39%;
+  right: 5rem;
+  text-align: left;
+}
+
+/* line 49, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+.circle__product--4 {
+  bottom: -6.5rem;
+  left: 32.5%;
+}
+
+/* line 54, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+.circle__product--5 {
+  bottom: -6.5rem;
+  right: 33%;
+}
+
+/* line 60, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+.circle__price {
+  position: absolute;
+  top: 42.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 11;
+}
+
+/* line 67, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+.circle__price--real {
+  font-size: 2rem;
+  text-decoration: line-through;
+  margin: 0;
+}
+
+/* line 73, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+.circle__price--offer {
+  font-family: "DM Serif Text", serif;
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  padding: 0;
+  line-height: 1;
+  color: #a3d4c2;
+}
+
+/* line 82, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+.circle__price a {
+  color: #546a62;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* line 3, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
+.products .product:not(:last-child) {
+  margin-bottom: 12rem;
+}
+
+/* line 7, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
+.products .product__img {
+  width: 100%;
+}
+
+/* line 11, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
+.products .product__title {
+  font-size: 3.2rem;
+  color: #a3d4c2;
+  font-weight: 700;
+}
+
+/* line 17, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
+.products .product__info {
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* line 22, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
+.products .product__features {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 2rem;
+}
+
+/* line 28, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
+.products .product__features p {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 1.6rem;
+}
+
+/* line 35, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
+.products .product__features li {
+  margin: 1rem 0;
+}
+
+/* line 39, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
+.products .product__features li > a {
+  text-decoration: none;
+  color: #546a62;
+  font-size: 1.6rem;
+}
+
+/* line 45, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
+.products .product__features svg {
+  fill: #a3d4c2;
+  margin-right: 1rem;
+}
+
+/* line 51, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
+.products .product__ingredients {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 2rem;
+}
+
+/* line 57, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
+.products .product__ingredients p {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 1.6rem;
+}
+
+/* line 64, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
+.products .product__ingredients li {
+  margin-right: 1rem;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #546a62;
+  padding: 0.25rem 1.5rem;
+  border-radius: 5rem;
+  background-color: #f5fffc;
+  color: #546a62;
+  border: 2px solid #ddd;
+}
+
+/* line 78, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
+.products .product__button {
+  margin-top: 2rem;
+}
+
 /*# sourceMappingURL=app.css.map */

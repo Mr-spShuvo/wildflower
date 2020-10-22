@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: $font;
+  font-family: 'Lato';
   text-rendering: optimizeLegibility;
   color: inherit;
   font-size: inherit;
@@ -29,4 +29,5 @@ body {
   line-height: 1.6;
   font-weight: $font-regular;
   font-size: 1.45rem;
+  color: $color-text;
 }

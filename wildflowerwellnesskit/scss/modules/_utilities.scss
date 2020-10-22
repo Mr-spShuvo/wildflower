@@ -1,0 +1,33 @@
+.content-box {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.d-none {
+  display: none;
+  opacity: 0;
+}
+
+.visible {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+.section {
+  padding: 5rem 0;
+
+  @include media-queries(atMedium) {
+    padding: 8rem 0;
+  }
+
+  @include media-queries(atLarge) {
+    padding: 10rem 0;
+  }
+}

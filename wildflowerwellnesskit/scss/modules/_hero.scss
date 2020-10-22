@@ -1,0 +1,71 @@
+.hero {
+  & > .content-box {
+    position: relative;
+  }
+  &__img {
+    position: absolute;
+    right: -5rem;
+    top: -5rem;
+    img {
+      width: 52rem;
+    }
+  }
+
+  &__title {
+    font-family: $font-heading;
+    font-size: 4.2rem;
+    line-height: 1;
+    padding-top: 6rem;
+    color: $color-sub-dark;
+  }
+
+  &__subtitle {
+    max-width: 45rem;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    margin: 1rem 0;
+  }
+
+  &__value {
+    position: relative;
+    max-width: 62rem;
+
+    &--real {
+      font-size: 2rem;
+      font-weight: $font-bold;
+      position: absolute;
+      top: 2.5rem;
+
+      span {
+        text-decoration: line-through;
+      }
+    }
+
+    &--offer {
+      color: $color-sub-dark;
+      font-size: 5rem;
+      position: absolute;
+      left: 12rem;
+      top: 0;
+      font-weight: $font-black;
+      font-family: $font-heading;
+    }
+
+    &--sticker {
+      width: 12rem;
+      position: absolute;
+      right: -5rem;
+      top: -5rem;
+    }
+  }
+
+  &__form {
+    max-width: 55rem;
+    margin-top: 12rem;
+  }
+
+  &__form-learnmore {
+    padding: 1.4rem 5rem;
+    margin-left: 2rem;
+  }
+}
