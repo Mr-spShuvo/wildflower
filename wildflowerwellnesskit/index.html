@@ -1,347 +1,495 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="//cdn.shopify.com/s/files/1/1584/2031/files/WF-flower-green-favicon_387f8097-2ea9-416a-89cd-8c9598951d16_32x32.png"
-      type="image/x-icon"
-    />
-    <title>WildFlower - Wellness Kit</title>
-    <!-- Bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-      crossorigin="anonymous"
-    />
-    <!-- Fonts -->
-    <link
-      href="//fonts.googleapis.com/css2?family=DM+Serif+Text&family=Lato:wght@300;400;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Styles -->
-    <link href="styles/app.css" rel="stylesheet" />
-  </head>
-  <body>
-    <div class="header" id="header">
-      <header>
-        <nav class="content-box header__nav">
-          <div class="header__logo">
-            <a href="/"><img src="img/logo.png" alt="WildFlower" /></a>
-          </div>
-          <div class="header__c2a">
-            <button onclick="focusForm()" class="button button--outline">
-              <i data-feather="shopping-bag"></i> Buy Now
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon"
+    href="//cdn.shopify.com/s/files/1/1584/2031/files/WF-flower-green-favicon_387f8097-2ea9-416a-89cd-8c9598951d16_32x32.png"
+    type="image/x-icon" />
+  <title>WildFlower - Wellness Kit</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+  <!-- Fonts -->
+  <link href="//fonts.googleapis.com/css2?family=DM+Serif+Text&family=Lato:wght@300;400;700;900&display=swap"
+    rel="stylesheet" />
+  <!-- Styles -->
+  <link href="styles/app.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="header" id="header">
+    <header>
+      <nav class="content-box header__nav">
+        <div class="header__logo">
+          <a href="/"><img src="img/logo.png" alt="WildFlower" /></a>
+        </div>
+        <div class="header__c2a">
+          <button onclick="focusForm()" class="button button--outline">
+            <i data-feather="shopping-bag"></i> Buy Now
+          </button>
+        </div>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="content-box">
+        <div class="hero__img">
+          <img src="img/hero.png" alt="hero" />
+        </div>
+
+        <h1 class="hero__title">
+          Wellness Kit for dealing with any<br />
+          unexpected discomfort and stress.
+        </h1>
+
+        <p class="hero__subtitle">
+          Our CBD Wellness Starter Kits offer a glimpse into the world of plant-based healing and provide a holistic wellness experience.
+        </p>
+        <div class="hero__value">
+          <p class="hero__value--real">Price: <span>$280</span></p>
+          <p class="hero__value--offer">$199</p>
+          <img src="img/offer-sticker.png" class="hero__value--sticker" />
+        </div>
+
+        <div class="hero__form">
+          <form action="#" class="form">
+            <div class="form__group">
+              <input type="text" name="firstName" placeholder="Your First Name*" />
+              <input type="text" name="lastName" placeholder="And Last Name*" />
+            </div>
+            <div class="form__group">
+              <input type="email" name="email" placeholder="Enter Email Address*" />
+              <input type="text" name="phone" placeholder="Phone Number " />
+            </div>
+            <button class="button button--main" type="submit" onclick="callmethod(e)">
+              <i data-feather="shopping-bag"></i> Order Now
             </button>
-          </div>
-        </nav>
-      </header>
-      <section class="hero">
-        <div class="content-box">
-          <div class="hero__img">
-            <img src="img/hero.png" alt="hero" />
-          </div>
-
-          <h1 class="hero__title">
-            Mist Kit for the bustling,<br />
-            wellness seeker on-the-go.
-          </h1>
-
-          <p class="hero__subtitle">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, odit. Enim alias soluta molestiae Ipsam!
-          </p>
-          <div class="hero__value">
-            <p class="hero__value--real">Price: <span>$220</span></p>
-            <p class="hero__value--offer">$199</p>
-            <img src="img/offer-sticker.png" class="hero__value--sticker" />
-          </div>
-
-          <div class="hero__form">
-            <form action="#" class="form">
-              <div class="form__group">
-                <input type="text" name="firstName" placeholder="Your First Name*" />
-                <input type="text" name="lastName" placeholder="And Last Name*" />
-              </div>
-              <div class="form__group">
-                <input type="email" name="email" placeholder="Enter Email Address*" />
-                <input type="text" name="phone" placeholder="Phone Number " />
-              </div>
-              <button class="button button--main" type="submit" onclick="callmethod(e)">
-                <i data-feather="shopping-bag"></i> Order Now
-              </button>
-              <a href="#buynow" class="button button--outline hero__form-learnmore"
-                ><i data-feather="chevron-down"></i> Learn More</a
-              >
-            </form>
-          </div>
+            <a href="#buynow" class="button button--outline hero__form-learnmore"><i data-feather="chevron-down"></i>
+              Learn More</a>
+          </form>
         </div>
-      </section>
-      <section class="header__seen">
-        <img src="img/seen-on.png" alt="Seen on" />
-      </section>
+      </div>
+    </section>
+    <section class="header__seen">
+      <img src="img/seen-on.png" alt="Seen on" />
+    </section>
+  </div>
+  <section class="package section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <img class="package__img" src="img/package.jpg" />
+        </div>
+        <div class="col-md-7 package__right">
+          <h2 class="package__title">Wildflower Wellness Kit</h2>
+          <p class="package__info">The CBD Starter Kit includes value of $280. <br />This package includes:</p>
+          <ul class="package__features">
+            <li>
+              <a href="#product-stick"><i data-feather="check-circle"></i> CBD Cool Stick</a>
+            </li>
+            
+            <li>
+              <a href="#product-vanilla-soap"><i data-feather="check-circle"></i> CBD Vanilla Soap</a>
+            </li>
+            <li>
+              <a href="#product-lavender-soap"><i data-feather="check-circle"></i> CBD Lavender Soap</a>
+            </li>
+            <li>
+              <a href="#product-capsules"><i data-feather="check-circle"></i> CBD Capsules</a>
+            </li>
+            <li>
+              <a href="#product-tincture"><i data-feather="check-circle"></i> CBD Wellness Tincture</a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
     </div>
-    <section class="package section">
+  </section>
+
+  
+
+  <section class="circle section">
+    <div class="container">
+      <div class="circle__box">
+        <img class="circle__img" src="img/circle.png" alt="product-circle" />
+
+        <div class="circle__product circle__product--1">
+          <p>Cool Stick <span>$59.99</span></p>
+        </div>
+        <div class="circle__product circle__product--2">
+          <p>Vanilla Soap <span>$29.99</span></p>
+        </div>
+        <div class="circle__product circle__product--3">
+          <p>Lavender Soap <span>$29.99</span></p>
+        </div>
+        <div class="circle__product circle__product--4">
+          <p>Capsules <span>$79.99</span></p>
+          
+        </div>
+        <div class="circle__product circle__product--5">
+          <p>Tincture <span>$79.99</span></p>
+        </div>
+
+        <div class="circle__price">
+          <p class="circle__price--real">$280</p>
+          <p class="circle__price--offer">$199</p>
+          <a href="#header">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials section">
+    <div class="container">
+      <div class="section__title">
+        <h3>Wildflower Customer Reviews</h3>
+        <p>Customer Testimonials From Real User of Wellness Kit</p>
+      </div>
+      <div class="row justify-content-between align-items-stretch">
+        <div class="col-md-4 testimonial__box">
+          <div class="testimonial__icon">&rdquo;</div>
+          <p class="testimonial__review">
+            <span>Pleasantly surprised</span>
+            AWESOME! Purchased while in Bermuda at The Tuck Shop and it saved my vacation!!! I have bursitis in my
+            thumbs and it worked like a charm! I also suffer from a back injury so I lathered my back up with it and
+            off we went riding on our moped! I purchased it in late May, it is now late Oct and I still have plenty
+            left after using it weekly if not daily.
+          </p>
+          <div class="testimonial__stars">
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <div class="testimonial__author">
+            <img class="testimonial__author--img" src="img/user-1.jpg" />
+            <h3 class="testimonial__author--name">
+              Erica Mathew
+              <span>Business Owner</span>
+            </h3>
+          </div>
+        </div>
+        <div class="col-md-4 testimonial__box">
+          <div class="testimonial__icon">&rdquo;</div>
+          <p class="testimonial__review">
+            <span>These are my favorite! </span>
+            I've just received my second package from Wildflower and as much as I love all of their products that I've
+            tried so far, the capsules are definitely my favorite. I have been taking these CBD Capsules for just over
+            3 months now and I'm less anxious, theres been a nice calmness in my mind and that alone makes everyday
+            things so much more enjoyable.
+          </p>
+          <div class="testimonial__stars">
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <div class="testimonial__author">
+            <img class="testimonial__author--img" src="img/user-2.jpg" />
+            <h3 class="testimonial__author--name">
+              Paola Martin
+              <span>Product Manager</span>
+            </h3>
+          </div>
+        </div>
+        <div class="col-md-4 testimonial__box">
+          <div class="testimonial__icon">&rdquo;</div>
+          <p class="testimonial__review">
+            <span>Truly life changing</span>
+            Wildflower is a first class, customer-oriented company with superior CBD products. I experience
+            debilitating body pains due to an inflammation response to a diagnosed psychiatric condition. Nothing has
+            worked to ease my body pains during flares of symptoms. All other pain relievers and other CBD products
+            exhausted, I then found Wildflower.
+          </p>
+          <div class="testimonial__stars">
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+            <i data-feather="star"></i>
+          </div>
+          <div class="testimonial__author">
+            <img class="testimonial__author--img" src="img/user-3.jpg" />
+            <h3 class="testimonial__author--name">
+              Sarah Synder
+              <span>School Teacher</span>
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="products section">
+    <div class="section__title">
+      <h3>Products In The Package</h3>
+      <p>Mindfully chosen Wildflower products to provide a holistic wellness experience</p>
+    </div>
+
+    <div class="product product--1 container" id="product-capsules">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img class="product__img" src="img/product-01.jpg" />
+        </div>
+        <div class="col-md-6">
+          <h3 class="product__title">CBD Cool Stick</h3>
+          <p class="product__info">
+            Our unique Cool Stick offers quick and convenient r elief from muscle, joint, and back pain. It has been
+            scientifically formulated to be the most reliable remedy for everyday aches and discomfort.* Once applied,
+            the unique blend of therapeutic ingredients will immediately cool and soothe any discomfort for
+            long-lasting relief.
+          </p>
+          <ul class="product__features">
+            <p>Benefits:</p>
+            <li><i data-feather="check-circle"></i> 300mg of Broad spectrum CBD</li>
+            <li>
+              <i data-feather="check-circle"></i> Apply to affected areas for relief from occasional joint and muscle
+              discomfort
+            </li>
+            <li><i data-feather="check-circle"></i> All-natural and Multi-Purpose</li>
+            <li><i data-feather="check-circle"></i> CO<sub>2</sub> extracted CBD</li>
+          </ul>
+
+          <ul class="product__ingredients">
+            <p>Ingredients:</p>
+            <li>Beeswax</li>
+            <li>Coconut oil</li>
+            <li>Soy wax</li>
+            <li>Shea butter</li>
+            <li>Cocoa butter</li>
+            <li>Peppermint essential oil</li>
+            <li>Hemp seed oil</li>
+            <li>Menthol crystals</li>
+            <li>Broad spectrum CBD oil</li>
+            <li>Arnica</li>
+            <li>Vitamin E</li>
+          </ul>
+
+          <div class="product__button">
+            <a href="#header" class="button button--outline"><i data-feather="shopping-bag"></i> Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product product--2 container" id="product-vanilla-soap">
+      <div class="row align-items-center flex-row-reverse">
+        <div class="col-md-6">
+          <img class="product__img" src="img/product-02.jpg" />
+        </div>
+        <div class="col-md-6">
+          <h3 class="product__title">CBD Vanilla Soap</h3>
+          <p class="product__info">
+            Wildflower’s all-natural CBD Vanilla Soap is made with the highest quality broad spectrum CBD extracts and
+            coconut oil to keep the skin healthy and hydrated. This gentle yet powerful face and body cleanser lathers
+            into a rich and soothing foam, improving overall skin health without dryness.
+          </p>
+          <ul class="product__features">
+            <p>Benefits:</p>
+            <li><i data-feather="check-circle"></i> Gently removes excess dirt oils</li>
+            <li><i data-feather="check-circle"></i> Removes dead skin cells</li>
+            <li><i data-feather="check-circle"></i> Reveal the bright, fresh, radiant skin underneath.</li>
+          </ul>
+
+          <ul class="product__ingredients">
+            <p>Ingredients:</p>
+            <li>Coconut oil</li>
+            <li>Water</li>
+            <li>Lye</li>
+            <li>Broad spectrum CBD oil</li>
+            <li>Vanilla essential oil</li>
+          </ul>
+
+          <div class="product__button">
+            <a href="#header" class="button button--outline"><i data-feather="shopping-bag"></i> Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product product--3 container" id="product-lavender-soap">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img class="product__img" src="img/product-03.jpg" />
+        </div>
+        <div class="col-md-6">
+          <h3 class="product__title">CBD Lavender Soap</h3>
+          <p class="product__info">
+            Wildflower’s all-natural CBD Lavender Soap is made with the highest quality broad spectrum CBD extracts
+            and coconut oil to keep the skin healthy and hydrated. This gentle yet powerful face and body cleanser
+            lathers into a rich and soothing foam, improving overall skin health without dryness. Lavender's
+            anti-inflammatory properties offer soothing comfort for your skin and may help reduce redness.
+          </p>
+          <ul class="product__features">
+            <p>Benefits:</p>
+            <li><i data-feather="check-circle"></i> Gently removes excess dirt oils</li>
+            <li><i data-feather="check-circle"></i> Removes dead skin cells</li>
+            <li><i data-feather="check-circle"></i> Reveal the bright, fresh, radiant skin underneath.</li>
+          </ul>
+
+          <ul class="product__ingredients">
+            <p>Ingredients:</p>
+            <li>Coconut oil</li>
+            <li>Water</li>
+            <li>Lye</li>
+            <li>Broad spectrum CBD oil</li>
+            <li>Lavender essential oil</li>
+          </ul>
+
+          <div class="product__button">
+            <a href="#header" class="button button--outline"><i data-feather="shopping-bag"></i> Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="product product--4 container" id="product-stick">
+      <div class="row align-items-center flex-row-reverse">
+        <div class="col-md-6">
+          <img class="product__img" src="img/product-04.jpg" />
+        </div>
+        <div class="col-md-6">
+          <h3 class="product__title">CBD Capsules</h3>
+          <p class="product__info">
+            Wildflower’s CBD CAPSULES are made with the highest quality, pure whole–plant extract, and hemp seed oil
+            rich in amino acids and omega 3 & 6. Encapsulated in clear vegan vegetable capsules, our CBD CAPSULES are
+            a convenient and effective way to incorporate CBD into your daily wellness routine.
+          </p>
+          <ul class="product__features">
+            <p>Benefits:</p>
+            <li><i data-feather="check-circle"></i> A convenient way to take the purest CBD</li>
+            <li><i data-feather="check-circle"></i> Promotes overall health</li>
+            <li><i data-feather="check-circle"></i> Relieves occasional joint and muscle discomfort</li>
+            <li><i data-feather="check-circle"></i> Provides a sense of calming</li>
+            <li><i data-feather="check-circle"></i> Supports healthy brain function</li>
+          </ul>
+
+          <ul class="product__ingredients">
+            <p>Ingredients:</p>
+            <li>Hemp Seed Oil</li>
+            <li>Vegan Capsule</li>
+            <li>CBD Crystalline</li>
+            <li>CBD Extract</li>
+          </ul>
+
+          <div class="product__button">
+            <a href="#header" class="button button--outline"><i data-feather="shopping-bag"></i> Buy Now</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="product product--5 container" id="product-tincture">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img class="product__img" src="img/product-05.jpg" />
+        </div>
+        <div class="col-md-6">
+          <h3 class="product__title">CBD Wellness Tincture</h3>
+          <p class="product__info">
+            An excellent way to incorporate high and controlled doses of CBD in your daily wellness routine. The tropical fruit flavor masks the strong smell and taste of CBD, making it easy to keep under your tongue longer for maximum absorption.
+          </p>
+          <ul class="product__features">
+            <p>Benefits:</p>
+            <li><i data-feather="check-circle"></i> 16.5mg of CBD per dropper</li>
+            <li><i data-feather="check-circle"></i> Broad spectrum CBD derived from hemp plants</li>
+            <li><i data-feather="check-circle"></i> Alcohol-free
+              Pesticide-free, and fertilizer-free   </li>
+            <li><i data-feather="check-circle"></i>Sublingual intake is fast-absorbing for quick effect</li>
+            <li><i data-feather="check-circle"></i> All natural, Tropical Fruit flavor makes it easy to take</li>
+          </ul>
+
+          <ul class="product__ingredients">
+            <p>Ingredients:</p>
+            <li>Hemp seed oil</li>
+            <li>Soy Oil</li>
+            <li>Broad spectrum hemp CBD</li>
+            <li>Natural Fruit Extracts</li>
+            <li>Milk thistle extract</li>
+          </ul>
+
+          <div class="product__button">
+            <a href="#header" class="button button--outline"><i data-feather="shopping-bag"></i> Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+
+  <section class="footer-c2a">
+    <img class="footer-c2a__img" src="img/c2a.gif" alt="Call to Action" />
+    <div class="container">
+      <div class="footer-c2a__text">
+        <div class="footer-c2a__timer" id="clockdiv">
+          <div>
+            <span class="hours"></span>
+            <div class="smalltext">Hours</div>
+          </div>
+          <div>
+            <span class="minutes"></span>
+            <div class="smalltext">Minutes</div>
+          </div>
+          <div>
+            <span class="seconds"></span>
+            <div class="smalltext">Seconds</div>
+          </div>
+        </div>
+        <h3>Grab it before it's gone.</h3>
+        <p>Save upto 10%. Limited time offer.*</p>
+        <a href="#header" class="button button--outline"><i data-feather="shopping-bag"></i> Buy Now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__top">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-4">
-            <img class="package__img" src="img/package.jpg" />
-          </div>
-          <div class="col-md-7 package__right">
-            <h2 class="package__title">Wildflower Wellness Kit</h2>
-            <p class="package__info">A Mist CBD Starter Kit includes value of $220. <br />This package includes:</p>
-            <ul class="package__features">
-              <li>
-                <a href="#"><i data-feather="check-circle"></i> CBD Capsules</a>
-              </li>
-              <li>
-                <a href="#"><i data-feather="check-circle"></i> CBD Cool Stick</a>
-              </li>
-              <li>
-                <a href="#"><i data-feather="check-circle"></i> CBD Immunity Vaporizer</a>
-              </li>
-              <li>
-                <a href="#"><i data-feather="check-circle"></i> CBD Vanilla Soap</a>
-              </li>
-              <li>
-                <a href="#"><i data-feather="check-circle"></i> CBD Lavender Soap</a>
-              </li>
-            </ul>
-          </div>
+        <img src="img/logo-white.png" class="footer__logo" />
+        <p class="footer__info">
+          The Wildflower mission is to connect people with the healing power of plants. We live to share and inspire
+          holistic wellness by designing and developing the best-performing CBD and cannabis wellness products
+          available, and provide options for people seeking holistic wellness and health.
+        </p>
+
+        <div class="footer__social">
+          <a title="Facebook" href="https://www.facebook.com/wildflowerplantsheal" target="_blank"><i
+              data-feather="facebook"></i>
+          </a>
+          <a title="Pinterest" href="https://www.pinterest.ca/widlflowerwellness/boards/" target="_blank"><i
+              data-feather="target"></i>
+          </a>
+          <a title="Instagram" href="https://www.instagram.com/wildflower_plantsheal/" target="_blank"><i
+              data-feather="instagram"></i>
+          </a>
         </div>
       </div>
-    </section>
-
-    <section class="circle section">
+    </div>
+    <div class="footer__bottom">
       <div class="container">
-        <div class="circle__box">
-          <img class="circle__img" src="img/circle.png" alt="product-circle" />
-
-          <div class="circle__product circle__product--1">
-            <p>CBD Capsules <span>$29.00</span></p>
+        <div class="row">
+          <div class="col-md-6">
+            &copy; 2020 Wildflower Wellness
           </div>
-          <div class="circle__product circle__product--2">
-            <p>CBD Capsules <span>$29.00</span></p>
-          </div>
-          <div class="circle__product circle__product--3">
-            <p>CBD Capsules <span>$29.00</span></p>
-          </div>
-          <div class="circle__product circle__product--4">
-            <p>CBD Capsules <span>$29.00</span></p>
-          </div>
-          <div class="circle__product circle__product--5">
-            <p>CBD Capsules <span>$29.00</span></p>
-          </div>
-
-          <div class="circle__price">
-            <p class="circle__price--real">$220</p>
-            <p class="circle__price--offer">$199</p>
-            <a href="#header">Order Now</a>
+          <div class="col-md-6 text-right">
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    </div>
+  </footer>
 
-    <section class="products section">
-      <div class="product product--1 container">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <img class="product__img" src="img/product-01.jpg" />
-          </div>
-          <div class="col-md-6">
-            <h3 class="product__title">CBD Capsules</h3>
-            <p class="product__info">
-              Wildflower’s CBD CAPSULES are made with the highest quality, pure whole–plant extract, and hemp seed oil
-              rich in amino acids and omega 3 & 6. Encapsulated in clear vegan vegetable capsules, our CBD CAPSULES are
-              a convenient and effective way to incorporate CBD into your daily wellness routine.
-            </p>
-            <ul class="product__features">
-              <p>Features:</p>
-              <li><i data-feather="check-circle"></i> A convenient way to take the purest CBD</li>
-              <li><i data-feather="check-circle"></i> Promotes overall health</li>
-              <li><i data-feather="check-circle"></i> Relieves occasional joint and muscle discomfort</li>
-              <li><i data-feather="check-circle"></i> Provides a sense of calming</li>
-              <li><i data-feather="check-circle"></i> Supports healthy brain function</li>
-            </ul>
+  <!-- Scripts -->
+  <script src="https://unpkg.com/feather-icons"></script>
 
-            <ul class="product__ingredients">
-              <p>Ingredients:</p>
-              <li>Hemp Seed Oil</li>
-              <li>Vegan Capsule</li>
-              <li>CBD Crystalline</li>
-              <li>CBD Extract</li>
-            </ul>
+  <script defer src="scripts/app.js"></script>
+</body>
 
-            <div class="product__button">
-              <a href="#header" class="button button--outline"><i data-feather="shopping-bag"></i> Add to Bag</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product product--2 container">
-        <div class="row align-items-center flex-row-reverse">
-          <div class="col-md-6">
-            <img class="product__img" src="img/product-02.jpg" />
-          </div>
-          <div class="col-md-6">
-            <h3 class="product__title">CBD Capsules</h3>
-            <p class="product__info">
-              Wildflower’s CBD CAPSULES are made with the highest quality, pure whole–plant extract, and hemp seed oil
-              rich in amino acids and omega 3 & 6. Encapsulated in clear vegan vegetable capsules, our CBD CAPSULES are
-              a convenient and effective way to incorporate CBD into your daily wellness routine.
-            </p>
-            <ul class="product__features">
-              <p>Features:</p>
-              <li><i data-feather="check-circle"></i> A convenient way to take the purest CBD</li>
-              <li><i data-feather="check-circle"></i> Promotes overall health</li>
-              <li><i data-feather="check-circle"></i> Relieves occasional joint and muscle discomfort</li>
-              <li><i data-feather="check-circle"></i> Provides a sense of calming</li>
-              <li><i data-feather="check-circle"></i> Supports healthy brain function</li>
-            </ul>
-
-            <ul class="product__ingredients">
-              <p>Ingredients:</p>
-              <li>Hemp Seed Oil</li>
-              <li>Vegan Capsule</li>
-              <li>CBD Crystalline</li>
-              <li>CBD Extract</li>
-            </ul>
-
-            <div class="product__button">
-              <a href="#header" class="button button--outline"><i data-feather="shopping-bag"></i> Add to Bag</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product product--3 container">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <img class="product__img" src="img/product-03.jpg" />
-          </div>
-          <div class="col-md-6">
-            <h3 class="product__title">CBD Capsules</h3>
-            <p class="product__info">
-              Wildflower’s CBD CAPSULES are made with the highest quality, pure whole–plant extract, and hemp seed oil
-              rich in amino acids and omega 3 & 6. Encapsulated in clear vegan vegetable capsules, our CBD CAPSULES are
-              a convenient and effective way to incorporate CBD into your daily wellness routine.
-            </p>
-            <ul class="product__features">
-              <p>Features:</p>
-              <li><i data-feather="check-circle"></i> A convenient way to take the purest CBD</li>
-              <li><i data-feather="check-circle"></i> Promotes overall health</li>
-              <li><i data-feather="check-circle"></i> Relieves occasional joint and muscle discomfort</li>
-              <li><i data-feather="check-circle"></i> Provides a sense of calming</li>
-              <li><i data-feather="check-circle"></i> Supports healthy brain function</li>
-            </ul>
-
-            <ul class="product__ingredients">
-              <p>Ingredients:</p>
-              <li>Hemp Seed Oil</li>
-              <li>Vegan Capsule</li>
-              <li>CBD Crystalline</li>
-              <li>CBD Extract</li>
-            </ul>
-
-            <div class="product__button">
-              <a href="#header" class="button button--outline"><i data-feather="shopping-bag"></i> Add to Bag</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product product--4 container">
-        <div class="row align-items-center flex-row-reverse">
-          <div class="col-md-6">
-            <img class="product__img" src="img/product-04.jpg" />
-          </div>
-          <div class="col-md-6">
-            <h3 class="product__title">CBD Capsules</h3>
-            <p class="product__info">
-              Wildflower’s CBD CAPSULES are made with the highest quality, pure whole–plant extract, and hemp seed oil
-              rich in amino acids and omega 3 & 6. Encapsulated in clear vegan vegetable capsules, our CBD CAPSULES are
-              a convenient and effective way to incorporate CBD into your daily wellness routine.
-            </p>
-            <ul class="product__features">
-              <p>Features:</p>
-              <li><i data-feather="check-circle"></i> A convenient way to take the purest CBD</li>
-              <li><i data-feather="check-circle"></i> Promotes overall health</li>
-              <li><i data-feather="check-circle"></i> Relieves occasional joint and muscle discomfort</li>
-              <li><i data-feather="check-circle"></i> Provides a sense of calming</li>
-              <li><i data-feather="check-circle"></i> Supports healthy brain function</li>
-            </ul>
-
-            <ul class="product__ingredients">
-              <p>Ingredients:</p>
-              <li>Hemp Seed Oil</li>
-              <li>Vegan Capsule</li>
-              <li>CBD Crystalline</li>
-              <li>CBD Extract</li>
-            </ul>
-
-            <div class="product__button">
-              <a href="#header" class="button button--outline"><i data-feather="shopping-bag"></i> Add to Bag</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="product product--5 container">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <img class="product__img" src="img/product-05.jpg" />
-          </div>
-          <div class="col-md-6">
-            <h3 class="product__title">CBD Capsules</h3>
-            <p class="product__info">
-              Wildflower’s CBD CAPSULES are made with the highest quality, pure whole–plant extract, and hemp seed oil
-              rich in amino acids and omega 3 & 6. Encapsulated in clear vegan vegetable capsules, our CBD CAPSULES are
-              a convenient and effective way to incorporate CBD into your daily wellness routine.
-            </p>
-            <ul class="product__features">
-              <p>Features:</p>
-              <li><i data-feather="check-circle"></i> A convenient way to take the purest CBD</li>
-              <li><i data-feather="check-circle"></i> Promotes overall health</li>
-              <li><i data-feather="check-circle"></i> Relieves occasional joint and muscle discomfort</li>
-              <li><i data-feather="check-circle"></i> Provides a sense of calming</li>
-              <li><i data-feather="check-circle"></i> Supports healthy brain function</li>
-            </ul>
-
-            <ul class="product__ingredients">
-              <p>Ingredients:</p>
-              <li>Hemp Seed Oil</li>
-              <li>Vegan Capsule</li>
-              <li>CBD Crystalline</li>
-              <li>CBD Extract</li>
-            </ul>
-
-            <div class="product__button">
-              <a href="#header" class="button button--outline"><i data-feather="shopping-bag"></i> Add to Bag</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Scripts -->
-    <script src="https://unpkg.com/feather-icons"></script>
-    <!-- jQuery and JS bundle w/ Popper.js -->
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="scripts/app.js"></script>
-    <script defer>
-      feather.replace();
-      function focusForm() {
-        const input = document.querySelector('input[name="firstName"]');
-        input.focus();
-      }
-    </script>
-  </body>
 </html>

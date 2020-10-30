@@ -3,6 +3,18 @@
   height: 100vh;
   position: relative;
 
+  &__steps {
+    width: 40rem;
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+
+    img {
+      width: 100%;
+    }
+  }
+
   &__nav {
     display: flex;
     justify-content: space-between;
@@ -20,6 +32,14 @@
     img {
       display: block;
       width: 600px;
+    }
+  }
+
+  &__icons {
+    text-align: right;
+
+    img {
+      width: 20%;
     }
   }
 }

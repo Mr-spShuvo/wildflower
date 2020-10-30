@@ -21,8 +21,8 @@
       line-height: 1.2;
 
       span {
-        font-size: 1.7rem;
-        font-weight: $font-regular;
+        font-size: 1.8rem;
+        font-weight: $font-black;
         display: block;
         margin: 0;
         color: $color-main;
@@ -36,24 +36,24 @@
 
     &--2 {
       top: 39%;
-      left: 5rem;
+      left: 7rem;
       text-align: right;
     }
 
     &--3 {
       top: 39%;
-      right: 5rem;
+      right: 4rem;
       text-align: left;
     }
 
     &--4 {
       bottom: -6.5rem;
-      left: 32.5%;
+      left: 35%;
     }
 
     &--5 {
       bottom: -6.5rem;
-      right: 33%;
+      right: 35%;
     }
   }
 
@@ -68,6 +68,7 @@
       font-size: 2rem;
       text-decoration: line-through;
       margin: 0;
+      font-weight: $font-bold;
     }
 
     &--offer {
@@ -84,6 +85,11 @@
       text-transform: uppercase;
       font-weight: $font-bold;
       letter-spacing: 0.5px;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: $color-main;
+      }
     }
   }
 }

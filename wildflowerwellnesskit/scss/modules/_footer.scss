@@ -1,0 +1,40 @@
+.footer {
+  &__top {
+    text-align: center;
+    padding: 8rem;
+    background-color: $color-main;
+  }
+
+  &__logo {
+    height: 3.5rem;
+  }
+
+  &__info {
+    max-width: 65%;
+    margin: 2rem auto;
+  }
+
+  &__social {
+    & a {
+      color: $color-sub;
+      text-decoration: none;
+
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+
+  &__bottom {
+    padding: 1rem 0;
+    background-color: $color-sub;
+    font-size: 1.3rem;
+    color: $color-light;
+
+    a {
+      color: $color-main;
+      text-decoration: underline;
+      margin-left: 1rem;
+    }
+  }
+}

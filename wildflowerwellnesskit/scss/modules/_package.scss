@@ -34,6 +34,15 @@
       text-decoration: none;
       color: $color-sub;
       font-size: 1.7rem;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $color-main;
+
+        svg {
+          color: $color-sub;
+        }
+      }
     }
 
     svg {

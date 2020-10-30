@@ -28,6 +28,30 @@
   }
 
   @include media-queries(atLarge) {
-    padding: 10rem 0;
+    padding: 12rem 0;
+  }
+
+  &__title {
+    margin-top: -4rem;
+    padding-bottom: 4rem;
+    text-align: center;
+
+    h3 {
+      font-size: 4.4rem;
+      color: $color-sub;
+    }
+
+    p {
+      font-size: 2rem;
+      color: $color-main;
+    }
+
+    @include media-queries(atMedium) {
+      padding-bottom: 6rem;
+    }
+
+    @include media-queries(atLarge) {
+      padding-bottom: 8rem;
+    }
   }
 }
