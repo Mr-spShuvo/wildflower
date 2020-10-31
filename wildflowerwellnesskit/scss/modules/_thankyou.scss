@@ -1,0 +1,71 @@
+.thankyou {
+  padding-top: 3.5rem;
+
+  text-align: center;
+  &__icon {
+    width: 9rem;
+    height: 9rem;
+    fill: $color-main;
+  }
+
+  &__title {
+    color: $color-main;
+    font-size: 3rem;
+    margin-top: 1rem;
+    img {
+      margin-left: 1rem;
+    }
+  }
+
+  &__info {
+    font-weight: $font-light;
+    text-transform: uppercase;
+  }
+
+  &__other {
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 48%;
+
+    &--title {
+      font-size: 1.6rem;
+      text-align: center;
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+      font-weight: $font-bold;
+      color: $color-main;
+      letter-spacing: 3px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    img {
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      font-weight: $font-bold;
+      color: $color-main;
+    }
+
+    p {
+      line-height: 1;
+      color: $color-sub;
+      font-weight: $font-bold;
+      font-size: 1.7rem;
+
+      span {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        text-decoration: line-through;
+        color: $color-text;
+        font-weight: $font-light;
+      }
+    }
+  }
+}
