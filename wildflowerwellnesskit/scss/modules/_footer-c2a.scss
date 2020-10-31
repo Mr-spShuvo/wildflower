@@ -35,6 +35,11 @@
     height: 100%;
     object-position: right center;
     object-fit: contain;
+    display: none;
+
+    @include media-queries(atMediumLarge) {
+      display: block;
+    }
   }
 
   &__text {

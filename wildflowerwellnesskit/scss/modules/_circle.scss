@@ -8,17 +8,32 @@
   }
 
   &__img {
-    width: 60%;
+    width: 100%;
+    max-width: 40rem;
+
+    @include media-queries(atMediumLarge) {
+      max-width: 50rem;
+    }
+
+    @include media-queries(atLarge) {
+      max-width: 60rem;
+    }
   }
 
   &__product {
     position: absolute;
+
     p {
-      font-size: 2rem;
+      font-size: 1.6rem;
       text-transform: uppercase;
       color: $color-sub;
-      font-weight: $font-light;
       line-height: 1.2;
+      display: none;
+
+      @include media-queries(atMedium) {
+        font-size: 2rem;
+        display: block;
+      }
 
       span {
         font-size: 1.8rem;
@@ -28,6 +43,7 @@
         color: $color-main;
       }
     }
+
     &--1 {
       top: -5rem;
       left: 50%;
@@ -36,24 +52,72 @@
 
     &--2 {
       top: 39%;
-      left: 7rem;
+      left: 0rem;
       text-align: right;
+
+      @include media-queries(atMedium) {
+        left: -2rem;
+      }
+
+      @include media-queries(atMediumLarge) {
+        left: 0rem;
+      }
+
+      @include media-queries(atLarge) {
+        left: 7rem;
+      }
     }
 
     &--3 {
       top: 39%;
       right: 4rem;
       text-align: left;
+
+      @include media-queries(atMedium) {
+        right: -4rem;
+      }
+
+      @include media-queries(atMediumLarge) {
+        right: 0rem;
+      }
+
+      @include media-queries(atLarge) {
+        right: 4rem;
+      }
     }
 
     &--4 {
       bottom: -6.5rem;
       left: 35%;
+
+      @include media-queries(atMedium) {
+        left: 32%;
+      }
+
+      @include media-queries(atMediumLarge) {
+        left: 33.5%;
+      }
+
+      @include media-queries(atLarge) {
+        left: 35%;
+      }
     }
 
     &--5 {
       bottom: -6.5rem;
       right: 35%;
+
+      @include media-queries(atMedium) {
+        right: 32%;
+      }
+
+      @include media-queries(atMediumLarge) {
+        right: 33.5%;
+      }
+
+      @include media-queries(atLarge) {
+        right: 35%;
+      }
     }
   }
 
@@ -69,6 +133,11 @@
       text-decoration: line-through;
       margin: 0;
       font-weight: $font-bold;
+      display: none;
+
+      @include media-queries(atLarge) {
+        display: block;
+      }
     }
 
     &--offer {
@@ -86,9 +155,14 @@
       font-weight: $font-bold;
       letter-spacing: 0.5px;
       transition: all 0.3s ease;
+      display: none;
 
       &:hover {
         color: $color-main;
+      }
+
+      @include media-queries(atLarge) {
+        display: block;
       }
     }
   }

@@ -6,21 +6,50 @@
     position: absolute;
 
     &--left {
-      height: 18rem;
+      height: 10rem;
       left: 0;
       top: 0;
+
+      @include media-queries(atMedium) {
+        height: 12rem;
+      }
+
+      @include media-queries(atMediumLarge) {
+        height: 15rem;
+      }
+
+      @include media-queries(atLarge) {
+        height: 18rem;
+      }
     }
 
     &--right {
-      height: 30rem;
+      height: 15rem;
       right: 0;
       bottom: 0;
+
+      @include media-queries(atMedium) {
+        height: 20rem;
+      }
+
+      @include media-queries(atMediumLarge) {
+        height: 25rem;
+      }
+
+      @include media-queries(atLarge) {
+        height: 30rem;
+      }
     }
   }
 
   .row {
     img {
       width: 100%;
+      margin-top: 3rem;
+
+      @include media-queries(atMedium) {
+        margin-top: 0;
+      }
     }
   }
 

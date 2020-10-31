@@ -160,21 +160,57 @@ body {
 
 /* line 34, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_utilities.scss */
 .section__title {
-  margin-top: -4rem;
+  margin-top: 2rem;
   padding-bottom: 4rem;
   text-align: center;
 }
 
-/* line 39, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_utilities.scss */
+@media only screen and (min-width: 600px) {
+  /* line 34, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_utilities.scss */
+  .section__title {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* line 34, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_utilities.scss */
+  .section__title {
+    margin-top: -4rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 34, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_utilities.scss */
+  .section__title {
+    margin-top: -4rem;
+  }
+}
+
+/* line 51, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_utilities.scss */
 .section__title h3 {
-  font-size: 4.4rem;
+  font-size: 2.8rem;
   color: #546a62;
 }
 
-/* line 44, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_utilities.scss */
+@media only screen and (min-width: 600px) {
+  /* line 51, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_utilities.scss */
+  .section__title h3 {
+    font-size: 3.6rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 51, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_utilities.scss */
+  .section__title h3 {
+    font-size: 4.4rem;
+  }
+}
+
+/* line 64, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_utilities.scss */
 .section__title p {
   font-size: 2rem;
   color: #a3d4c2;
+  padding: 0 2rem;
 }
 
 @media only screen and (min-width: 600px) {
@@ -194,11 +230,17 @@ body {
 /* line 1, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_header.scss */
 .header {
   background: #f5fffc;
-  height: 100vh;
   position: relative;
 }
 
-/* line 6, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_header.scss */
+@media only screen and (min-width: 1200px) {
+  /* line 1, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_header.scss */
+  .header {
+    height: 100vh;
+  }
+}
+
+/* line 9, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_header.scss */
 .header__steps {
   width: 40rem;
   position: absolute;
@@ -207,12 +249,12 @@ body {
   transform: translateX(-50%);
 }
 
-/* line 13, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_header.scss */
+/* line 16, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_header.scss */
 .header__steps img {
   width: 100%;
 }
 
-/* line 18, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_header.scss */
+/* line 21, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_header.scss */
 .header__nav {
   display: flex;
   justify-content: space-between;
@@ -222,27 +264,62 @@ body {
   z-index: 11;
 }
 
-/* line 27, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_header.scss */
+/* line 30, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_header.scss */
 .header__seen {
   position: absolute;
   bottom: 3.5rem;
   right: 6rem;
+  display: none;
 }
 
-/* line 32, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_header.scss */
+/* line 36, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_header.scss */
 .header__seen img {
   display: block;
   width: 600px;
 }
 
-/* line 38, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_header.scss */
+@media only screen and (min-width: 1200px) {
+  /* line 30, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_header.scss */
+  .header__seen {
+    display: block;
+  }
+}
+
+/* line 46, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_header.scss */
 .header__icons {
   text-align: right;
 }
 
-/* line 41, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_header.scss */
+/* line 49, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_header.scss */
 .header__icons img {
   width: 20%;
+}
+
+/* line 55, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_header.scss */
+.header__c2a button {
+  padding: 0.7rem 3.5rem;
+  font-size: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 55, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_header.scss */
+  .header__c2a button {
+    font-size: 1.3rem;
+    padding: 1.5rem 5rem;
+  }
+}
+
+/* line 64, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_header.scss */
+.header__c2a button svg {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 64, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_header.scss */
+  .header__c2a button svg {
+    margin-right: 0.8rem;
+  }
 }
 
 /* line 2, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
@@ -250,83 +327,207 @@ body {
   position: relative;
 }
 
-/* line 5, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+/* line 6, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
 .hero__img {
   position: absolute;
-  right: -5rem;
+  left: 50%;
   top: -5rem;
+  transform: translateX(-50%);
 }
 
-/* line 9, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+@media only screen and (min-width: 1200px) {
+  /* line 6, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+  .hero__img {
+    left: unset;
+    transform: translateX(0);
+    right: -5rem;
+  }
+}
+
+/* line 18, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
 .hero__img img {
-  width: 52rem;
+  width: 36rem;
 }
 
-/* line 14, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+@media only screen and (min-width: 900px) {
+  /* line 18, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+  .hero__img img {
+    width: 44rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 18, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+  .hero__img img {
+    width: 52rem;
+  }
+}
+
+/* line 31, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
 .hero__title {
+  padding-top: 40vh;
   font-family: "DM Serif Text", serif;
-  font-size: 4.2rem;
   line-height: 1;
-  padding-top: 6rem;
+  font-size: 2.8rem;
   color: #335449;
+  text-align: center;
+  margin: auto;
 }
 
-/* line 22, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+@media only screen and (min-width: 600px) {
+  /* line 31, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+  .hero__title {
+    width: 52rem;
+    padding-top: 30vh;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 31, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+  .hero__title {
+    width: 60%;
+    font-size: 4.2rem;
+    padding-top: 6vh;
+    text-align: left;
+    margin: 0;
+  }
+}
+
+/* line 54, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
 .hero__subtitle {
   max-width: 45rem;
   font-size: 1.6rem;
   line-height: 1.4;
-  margin: 1rem 0;
+  margin: 1rem auto;
+  text-align: center;
 }
 
-/* line 29, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+@media only screen and (min-width: 1200px) {
+  /* line 54, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+  .hero__subtitle {
+    text-align: left;
+    margin: 1rem 0;
+  }
+}
+
+/* line 67, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
 .hero__value {
   position: relative;
   max-width: 62rem;
+  margin: 0 auto;
 }
 
-/* line 33, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+@media only screen and (min-width: 1200px) {
+  /* line 67, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+  .hero__value {
+    margin: 0;
+  }
+}
+
+/* line 76, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
 .hero__value--real {
   font-size: 2rem;
   font-weight: 700;
   position: absolute;
   top: 2.5rem;
+  display: none;
 }
 
-/* line 39, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+/* line 82, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
 .hero__value--real span {
   text-decoration: line-through;
 }
 
-/* line 44, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+@media only screen and (min-width: 1200px) {
+  /* line 76, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+  .hero__value--real {
+    display: block;
+  }
+}
+
+/* line 93, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
 .hero__value--offer {
   color: #335449;
   font-size: 5rem;
   position: absolute;
-  left: 12rem;
+  left: 50%;
+  transform: translateX(-50%);
   top: 0;
   font-weight: 900;
   font-family: "DM Serif Text", serif;
 }
 
-/* line 54, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+@media only screen and (min-width: 1200px) {
+  /* line 93, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+  .hero__value--offer {
+    left: 12rem;
+    transform: translateX(0);
+  }
+}
+
+/* line 109, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
 .hero__value--sticker {
   width: 12rem;
   position: absolute;
   right: -5rem;
   top: -5rem;
+  display: none;
 }
 
-/* line 62, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+@media only screen and (min-width: 900px) {
+  /* line 109, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+  .hero__value--sticker {
+    display: block;
+  }
+}
+
+/* line 122, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
 .hero__form {
   max-width: 55rem;
-  margin-top: 12rem;
+  margin-top: 10rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* line 67, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+@media only screen and (min-width: 900px) {
+  /* line 122, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+  .hero__form {
+    margin-top: 12rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 122, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+  .hero__form {
+    text-align: left;
+    margin-left: unset;
+    margin-right: unset;
+  }
+}
+
+/* line 140, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
 .hero__form-learnmore {
-  padding: 1.4rem 5rem;
-  margin-left: 2rem;
+  padding: 1.4rem 3rem;
+  margin-left: 0.5rem;
+  margin-bottom: 4rem;
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 140, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+  .hero__form-learnmore {
+    margin-left: 1rem;
+    padding: 1.4rem 4rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 140, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_hero.scss */
+  .hero__form-learnmore {
+    margin-left: 2rem;
+    padding: 1.4rem 5rem;
+    margin-bottom: 0rem;
+  }
 }
 
 /* line 1, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_form.scss */
@@ -340,27 +541,63 @@ body {
   justify-content: space-between;
   align-items: center;
   margin: 2rem 0;
+  flex-wrap: wrap;
 }
 
-/* line 11, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_form.scss */
+/* line 12, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_form.scss */
 .form input {
   padding: 1.5rem;
-  flex-basis: 48%;
+  flex-basis: 100%;
   border: 3px solid #546a62;
   background-color: transparent;
   border-radius: 5px;
 }
 
-/* line 18, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_form.scss */
+/* line 19, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_form.scss */
+.form input:first-child {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 900px) {
+  /* line 12, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_form.scss */
+  .form input {
+    flex-basis: 48%;
+  }
+  /* line 25, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_form.scss */
+  .form input:first-child {
+    margin-bottom: 0;
+  }
+}
+
+/* line 30, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_form.scss */
 .form input:focus {
   border-color: #a3d4c2;
 }
 
-/* line 22, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_form.scss */
+/* line 34, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_form.scss */
 .form input::placeholder {
   color: #546a62 !important;
   opacity: 1;
   /* Firefox */
+}
+
+/* line 40, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_form.scss */
+.form__button {
+  padding: 1.4rem 3rem;
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 40, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_form.scss */
+  .form__button {
+    padding: 1.4rem 4rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 40, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_form.scss */
+  .form__button {
+    padding: 1.4rem 5rem;
+  }
 }
 
 /* line 2, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_package.scss */
@@ -375,20 +612,29 @@ body {
 
 /* line 10, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_package.scss */
 .package__title {
-  font-size: 3.6rem;
   text-transform: uppercase;
   font-weight: 300;
   color: #a3d4c2;
+  font-size: 3rem;
+  margin-top: 2rem;
 }
 
-/* line 17, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_package.scss */
+@media only screen and (min-width: 600px) {
+  /* line 10, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_package.scss */
+  .package__title {
+    font-size: 3.6rem;
+    margin-top: 0;
+  }
+}
+
+/* line 23, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_package.scss */
 .package__info {
   margin-top: 1rem;
   font-size: 2rem;
   font-weight: 300;
 }
 
-/* line 23, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_package.scss */
+/* line 29, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_package.scss */
 .package__features {
   list-style: none;
   padding: 0;
@@ -396,12 +642,12 @@ body {
   margin-top: 3rem;
 }
 
-/* line 29, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_package.scss */
+/* line 35, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_package.scss */
 .package__features li {
   margin: 1rem 0;
 }
 
-/* line 33, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_package.scss */
+/* line 39, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_package.scss */
 .package__features li > a {
   text-decoration: none;
   color: #546a62;
@@ -409,17 +655,17 @@ body {
   transition: all 0.3s;
 }
 
-/* line 39, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_package.scss */
+/* line 45, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_package.scss */
 .package__features li > a:hover {
   color: #a3d4c2;
 }
 
-/* line 42, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_package.scss */
+/* line 48, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_package.scss */
 .package__features li > a:hover svg {
   color: #546a62;
 }
 
-/* line 48, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_package.scss */
+/* line 54, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_package.scss */
 .package__features svg {
   fill: #a3d4c2;
   margin-right: 1rem;
@@ -439,24 +685,47 @@ body {
 
 /* line 10, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
 .circle__img {
-  width: 60%;
+  width: 100%;
+  max-width: 40rem;
 }
 
-/* line 14, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+@media only screen and (min-width: 900px) {
+  /* line 10, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+  .circle__img {
+    max-width: 50rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 10, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+  .circle__img {
+    max-width: 60rem;
+  }
+}
+
+/* line 23, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
 .circle__product {
   position: absolute;
 }
 
-/* line 16, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+/* line 26, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
 .circle__product p {
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   color: #546a62;
-  font-weight: 300;
   line-height: 1.2;
+  display: none;
 }
 
-/* line 23, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+@media only screen and (min-width: 600px) {
+  /* line 26, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+  .circle__product p {
+    font-size: 2rem;
+    display: block;
+  }
+}
+
+/* line 38, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
 .circle__product p span {
   font-size: 1.8rem;
   font-weight: 900;
@@ -465,40 +734,124 @@ body {
   color: #a3d4c2;
 }
 
-/* line 31, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+/* line 47, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
 .circle__product--1 {
   top: -5rem;
   left: 50%;
   transform: translateX(-50%);
 }
 
-/* line 37, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+/* line 53, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
 .circle__product--2 {
   top: 39%;
-  left: 7rem;
+  left: 0rem;
   text-align: right;
 }
 
-/* line 43, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+@media only screen and (min-width: 600px) {
+  /* line 53, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+  .circle__product--2 {
+    left: -2rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* line 53, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+  .circle__product--2 {
+    left: 0rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 53, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+  .circle__product--2 {
+    left: 7rem;
+  }
+}
+
+/* line 71, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
 .circle__product--3 {
   top: 39%;
   right: 4rem;
   text-align: left;
 }
 
-/* line 49, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+@media only screen and (min-width: 600px) {
+  /* line 71, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+  .circle__product--3 {
+    right: -4rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* line 71, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+  .circle__product--3 {
+    right: 0rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 71, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+  .circle__product--3 {
+    right: 4rem;
+  }
+}
+
+/* line 89, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
 .circle__product--4 {
   bottom: -6.5rem;
   left: 35%;
 }
 
-/* line 54, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+@media only screen and (min-width: 600px) {
+  /* line 89, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+  .circle__product--4 {
+    left: 32%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* line 89, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+  .circle__product--4 {
+    left: 33.5%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 89, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+  .circle__product--4 {
+    left: 35%;
+  }
+}
+
+/* line 106, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
 .circle__product--5 {
   bottom: -6.5rem;
   right: 35%;
 }
 
-/* line 60, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+@media only screen and (min-width: 600px) {
+  /* line 106, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+  .circle__product--5 {
+    right: 32%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* line 106, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+  .circle__product--5 {
+    right: 33.5%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 106, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+  .circle__product--5 {
+    right: 35%;
+  }
+}
+
+/* line 124, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
 .circle__price {
   position: absolute;
   top: 42.5%;
@@ -507,15 +860,23 @@ body {
   z-index: 11;
 }
 
-/* line 67, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+/* line 131, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
 .circle__price--real {
   font-size: 2rem;
   text-decoration: line-through;
   margin: 0;
   font-weight: 700;
+  display: none;
 }
 
-/* line 74, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+@media only screen and (min-width: 1200px) {
+  /* line 131, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+  .circle__price--real {
+    display: block;
+  }
+}
+
+/* line 143, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
 .circle__price--offer {
   font-family: "DM Serif Text", serif;
   font-size: 5rem;
@@ -525,49 +886,60 @@ body {
   color: #a3d4c2;
 }
 
-/* line 83, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+/* line 152, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
 .circle__price a {
   color: #546a62;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 0.5px;
   transition: all 0.3s ease;
+  display: none;
 }
 
-/* line 90, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+/* line 160, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
 .circle__price a:hover {
   color: #a3d4c2;
 }
 
-/* line 1, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
-.products {
-  padding-top: 0;
+@media only screen and (min-width: 1200px) {
+  /* line 152, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_circle.scss */
+  .circle__price a {
+    display: block;
+  }
 }
 
-/* line 4, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
+/* line 3, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
 .products .product:not(:last-child) {
   margin-bottom: 12rem;
 }
 
-/* line 8, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
+/* line 7, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
 .products .product__img {
   width: 100%;
 }
 
-/* line 12, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
+/* line 11, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
 .products .product__title {
   font-size: 3.2rem;
   color: #a3d4c2;
   font-weight: 700;
+  margin-top: 2.5rem;
 }
 
-/* line 18, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
+@media only screen and (min-width: 600px) {
+  /* line 11, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
+  .products .product__title {
+    margin-top: 0rem;
+  }
+}
+
+/* line 22, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
 .products .product__info {
   line-height: 1.8;
   text-align: justify;
 }
 
-/* line 23, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
+/* line 27, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
 .products .product__features {
   list-style: none;
   padding: 0;
@@ -575,7 +947,7 @@ body {
   margin-top: 2rem;
 }
 
-/* line 29, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
+/* line 33, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
 .products .product__features p {
   font-weight: 700;
   text-transform: uppercase;
@@ -583,25 +955,25 @@ body {
   font-size: 1.6rem;
 }
 
-/* line 36, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
+/* line 40, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
 .products .product__features li {
   margin: 1rem 0;
 }
 
-/* line 40, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
+/* line 44, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
 .products .product__features li > a {
   text-decoration: none;
   color: #546a62;
   font-size: 1.6rem;
 }
 
-/* line 46, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
+/* line 50, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
 .products .product__features svg {
   fill: #a3d4c2;
   margin-right: 1rem;
 }
 
-/* line 52, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
+/* line 56, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
 .products .product__ingredients {
   list-style: none;
   padding: 0;
@@ -609,7 +981,7 @@ body {
   margin-top: 2rem;
 }
 
-/* line 58, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
+/* line 62, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
 .products .product__ingredients p {
   font-weight: 700;
   text-transform: uppercase;
@@ -617,7 +989,7 @@ body {
   font-size: 1.6rem;
 }
 
-/* line 65, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
+/* line 69, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
 .products .product__ingredients li {
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
@@ -632,34 +1004,46 @@ body {
   border: 2px solid #ddd;
 }
 
-/* line 80, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
+/* line 84, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_products.scss */
 .products .product__button {
   margin-top: 2rem;
 }
 
-/* line 3, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_testimonials.scss */
+/* line 2, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_testimonials.scss */
+.testimonials .testimonial {
+  flex-wrap: wrap;
+}
+
+/* line 5, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_testimonials.scss */
 .testimonials .testimonial__box {
-  flex-basis: 32%;
+  flex-basis: 100%;
   padding: 3rem;
   background-color: #f7f7f7;
   border: 2px solid #ddd;
   border-radius: 0.8rem;
 }
 
-/* line 11, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_testimonials.scss */
+@media only screen and (min-width: 1200px) {
+  /* line 5, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_testimonials.scss */
+  .testimonials .testimonial__box {
+    flex-basis: 32%;
+  }
+}
+
+/* line 17, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_testimonials.scss */
 .testimonials .testimonial__icon {
   font-size: 12rem;
   line-height: 0;
   color: #ddd;
 }
 
-/* line 17, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_testimonials.scss */
+/* line 23, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_testimonials.scss */
 .testimonials .testimonial__review {
   text-align: justify;
   margin: 2rem 0;
 }
 
-/* line 21, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_testimonials.scss */
+/* line 27, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_testimonials.scss */
 .testimonials .testimonial__review span {
   display: block;
   text-transform: uppercase;
@@ -670,18 +1054,18 @@ body {
   font-weight: 700;
 }
 
-/* line 32, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_testimonials.scss */
+/* line 38, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_testimonials.scss */
 .testimonials .testimonial__stars {
   text-align: center;
   color: #546a62;
 }
 
-/* line 36, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_testimonials.scss */
+/* line 42, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_testimonials.scss */
 .testimonials .testimonial__stars > svg {
   fill: #a3d4c2;
 }
 
-/* line 41, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_testimonials.scss */
+/* line 47, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_testimonials.scss */
 .testimonials .testimonial__author {
   margin-top: 2rem;
   display: flex;
@@ -689,7 +1073,7 @@ body {
   align-items: center;
 }
 
-/* line 47, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_testimonials.scss */
+/* line 53, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_testimonials.scss */
 .testimonials .testimonial__author--img {
   width: 6rem;
   height: 6rem;
@@ -697,14 +1081,14 @@ body {
   display: inline-block;
 }
 
-/* line 54, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_testimonials.scss */
+/* line 60, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_testimonials.scss */
 .testimonials .testimonial__author--name {
   color: #546a62;
   font-size: 2rem;
   text-align: center;
 }
 
-/* line 59, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_testimonials.scss */
+/* line 65, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_testimonials.scss */
 .testimonials .testimonial__author--name span {
   display: block;
   color: #a3d4c2;
@@ -755,16 +1139,24 @@ body {
   height: 100%;
   object-position: right center;
   object-fit: contain;
+  display: none;
 }
 
-/* line 40, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_footer-c2a.scss */
+@media only screen and (min-width: 900px) {
+  /* line 33, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_footer-c2a.scss */
+  .footer-c2a__img {
+    display: block;
+  }
+}
+
+/* line 45, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_footer-c2a.scss */
 .footer-c2a__text {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
 
-/* line 45, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_footer-c2a.scss */
+/* line 50, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_footer-c2a.scss */
 .footer-c2a__text h3 {
   font-weight: 900;
   font-size: 3.2rem;
@@ -773,7 +1165,7 @@ body {
   color: #546a62;
 }
 
-/* line 53, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_footer-c2a.scss */
+/* line 58, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_footer-c2a.scss */
 .footer-c2a__text p {
   font-size: 2rem;
   margin-bottom: 2rem;
@@ -782,7 +1174,7 @@ body {
 /* line 2, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_footer.scss */
 .footer__top {
   text-align: center;
-  padding: 8rem;
+  padding: 8rem 0;
   background-color: #a3d4c2;
 }
 
@@ -793,22 +1185,23 @@ body {
 
 /* line 12, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_footer.scss */
 .footer__info {
-  max-width: 65%;
+  max-width: 60rem;
+  padding: 0 2rem;
   margin: 2rem auto;
 }
 
-/* line 18, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_footer.scss */
+/* line 19, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_footer.scss */
 .footer__social a {
   color: #546a62;
   text-decoration: none;
 }
 
-/* line 22, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_footer.scss */
+/* line 23, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_footer.scss */
 .footer__social a:not(:last-child) {
   margin-right: 1.5rem;
 }
 
-/* line 28, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_footer.scss */
+/* line 29, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_footer.scss */
 .footer__bottom {
   padding: 1rem 0;
   background-color: #546a62;
@@ -816,11 +1209,10 @@ body {
   color: #f7f7f7;
 }
 
-/* line 34, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_footer.scss */
+/* line 35, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_footer.scss */
 .footer__bottom a {
   color: #a3d4c2;
   text-decoration: underline;
-  margin-left: 1rem;
 }
 
 /* line 1, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_order.scss */
@@ -1083,24 +1475,74 @@ body {
 
 /* line 8, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_knowledge.scss */
 .knowledge__icon--left {
-  height: 18rem;
+  height: 10rem;
   left: 0;
   top: 0;
 }
 
-/* line 14, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_knowledge.scss */
+@media only screen and (min-width: 600px) {
+  /* line 8, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_knowledge.scss */
+  .knowledge__icon--left {
+    height: 12rem;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* line 8, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_knowledge.scss */
+  .knowledge__icon--left {
+    height: 15rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 8, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_knowledge.scss */
+  .knowledge__icon--left {
+    height: 18rem;
+  }
+}
+
+/* line 26, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_knowledge.scss */
 .knowledge__icon--right {
-  height: 30rem;
+  height: 15rem;
   right: 0;
   bottom: 0;
 }
 
-/* line 22, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_knowledge.scss */
-.knowledge .row img {
-  width: 100%;
+@media only screen and (min-width: 600px) {
+  /* line 26, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_knowledge.scss */
+  .knowledge__icon--right {
+    height: 20rem;
+  }
 }
 
-/* line 28, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_knowledge.scss */
+@media only screen and (min-width: 900px) {
+  /* line 26, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_knowledge.scss */
+  .knowledge__icon--right {
+    height: 25rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  /* line 26, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_knowledge.scss */
+  .knowledge__icon--right {
+    height: 30rem;
+  }
+}
+
+/* line 46, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_knowledge.scss */
+.knowledge .row img {
+  width: 100%;
+  margin-top: 3rem;
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 46, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_knowledge.scss */
+  .knowledge .row img {
+    margin-top: 0;
+  }
+}
+
+/* line 57, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_knowledge.scss */
 .knowledge__box h2 {
   text-transform: uppercase;
   font-weight: 900;

@@ -32,18 +32,39 @@
   }
 
   &__title {
-    margin-top: -4rem;
+    margin-top: 2rem;
     padding-bottom: 4rem;
     text-align: center;
 
+    @include media-queries(atMedium) {
+      margin-top: 0;
+    }
+
+    @include media-queries(atMediumLarge) {
+      margin-top: -4rem;
+    }
+
+    @include media-queries(atLarge) {
+      margin-top: -4rem;
+    }
+
     h3 {
-      font-size: 4.4rem;
+      font-size: 2.8rem;
       color: $color-sub;
+
+      @include media-queries(atMedium) {
+        font-size: 3.6rem;
+      }
+
+      @include media-queries(atLarge) {
+        font-size: 4.4rem;
+      }
     }
 
     p {
       font-size: 2rem;
       color: $color-main;
+      padding: 0 2rem;
     }
 
     @include media-queries(atMedium) {

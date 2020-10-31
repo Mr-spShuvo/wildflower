@@ -6,14 +6,26 @@
     justify-content: space-between;
     align-items: center;
     margin: 2rem 0;
+    flex-wrap: wrap;
   }
 
   input {
     padding: 1.5rem;
-    flex-basis: 48%;
+    flex-basis: 100%;
     border: 3px solid $color-sub;
     background-color: transparent;
     border-radius: 5px;
+
+    &:first-child {
+      margin-bottom: 2rem;
+    }
+
+    @include media-queries(atMediumLarge) {
+      flex-basis: 48%;
+      &:first-child {
+        margin-bottom: 0;
+      }
+    }
 
     &:focus {
       border-color: $color-main;
@@ -22,6 +34,17 @@
     &::placeholder {
       color: $color-sub !important;
       opacity: 1; /* Firefox */
+    }
+  }
+
+  &__button {
+    padding: 1.4rem 3rem;
+    @include media-queries(atMedium) {
+      padding: 1.4rem 4rem;
+    }
+
+    @include media-queries(atLarge) {
+      padding: 1.4rem 5rem;
     }
   }
 }

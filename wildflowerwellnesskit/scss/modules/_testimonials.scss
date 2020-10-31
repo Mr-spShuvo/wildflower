@@ -1,11 +1,17 @@
 .testimonials {
   .testimonial {
+    flex-wrap: wrap;
+
     &__box {
-      flex-basis: 32%;
+      flex-basis: 100%;
       padding: 3rem;
       background-color: $color-light;
       border: 2px solid $color-light-gray;
       border-radius: 0.8rem;
+
+      @include media-queries(atLarge) {
+        flex-basis: 32%;
+      }
     }
 
     &__icon {

@@ -1,7 +1,10 @@
 .header {
   background: $color-bg;
-  height: 100vh;
   position: relative;
+
+  @include media-queries(atLarge) {
+    height: 100vh;
+  }
 
   &__steps {
     width: 40rem;
@@ -28,10 +31,15 @@
     position: absolute;
     bottom: 3.5rem;
     right: 6rem;
+    display: none;
 
     img {
       display: block;
       width: 600px;
+    }
+
+    @include media-queries(atLarge) {
+      display: block;
     }
   }
 
@@ -40,6 +48,27 @@
 
     img {
       width: 20%;
+    }
+  }
+
+  &__c2a {
+    button {
+      padding: 0.7rem 3.5rem;
+      font-size: 0;
+
+      @include media-queries(atMedium) {
+        font-size: 1.3rem;
+        padding: 1.5rem 5rem;
+      }
+
+      svg {
+        margin: 0;
+        padding: 0;
+
+        @include media-queries(atMedium) {
+          margin-right: 0.8rem;
+        }
+      }
     }
   }
 }

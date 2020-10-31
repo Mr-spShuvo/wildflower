@@ -8,10 +8,16 @@
   }
 
   &__title {
-    font-size: 3.6rem;
     text-transform: uppercase;
     font-weight: $font-light;
     color: $color-main;
+    font-size: 3rem;
+    margin-top: 2rem;
+
+    @include media-queries(atMedium) {
+      font-size: 3.6rem;
+      margin-top: 0;
+    }
   }
 
   &__info {

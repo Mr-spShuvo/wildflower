@@ -2,33 +2,76 @@
   & > .content-box {
     position: relative;
   }
+
   &__img {
     position: absolute;
-    right: -5rem;
+    left: 50%;
     top: -5rem;
+    transform: translateX(-50%);
+
+    @include media-queries(atLarge) {
+      left: unset;
+      transform: translateX(0);
+      right: -5rem;
+    }
+
     img {
-      width: 52rem;
+      width: 36rem;
+
+      @include media-queries(atMediumLarge) {
+        width: 44rem;
+      }
+
+      @include media-queries(atLarge) {
+        width: 52rem;
+      }
     }
   }
 
   &__title {
+    padding-top: 40vh;
     font-family: $font-heading;
-    font-size: 4.2rem;
     line-height: 1;
-    padding-top: 6rem;
+    font-size: 2.8rem;
     color: $color-sub-dark;
+    text-align: center;
+    margin: auto;
+
+    @include media-queries(atMedium) {
+      width: 52rem;
+      padding-top: 30vh;
+    }
+
+    @include media-queries(atLarge) {
+      width: 60%;
+      font-size: 4.2rem;
+      padding-top: 6vh;
+      text-align: left;
+      margin: 0;
+    }
   }
 
   &__subtitle {
     max-width: 45rem;
     font-size: 1.6rem;
     line-height: 1.4;
-    margin: 1rem 0;
+    margin: 1rem auto;
+    text-align: center;
+
+    @include media-queries(atLarge) {
+      text-align: left;
+      margin: 1rem 0;
+    }
   }
 
   &__value {
     position: relative;
     max-width: 62rem;
+    margin: 0 auto;
+
+    @include media-queries(atLarge) {
+      margin: 0;
+    }
 
     &--real {
       font-size: 2rem;
@@ -39,16 +82,28 @@
       span {
         text-decoration: line-through;
       }
+
+      display: none;
+
+      @include media-queries(atLarge) {
+        display: block;
+      }
     }
 
     &--offer {
       color: $color-sub-dark;
       font-size: 5rem;
       position: absolute;
-      left: 12rem;
+      left: 50%;
+      transform: translateX(-50%);
       top: 0;
       font-weight: $font-black;
       font-family: $font-heading;
+
+      @include media-queries(atLarge) {
+        left: 12rem;
+        transform: translateX(0);
+      }
     }
 
     &--sticker {
@@ -56,16 +111,47 @@
       position: absolute;
       right: -5rem;
       top: -5rem;
+      display: none;
+
+      @include media-queries(atMediumLarge) {
+        display: block;
+      }
     }
   }
 
   &__form {
     max-width: 55rem;
-    margin-top: 12rem;
+    margin-top: 10rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include media-queries(atMediumLarge) {
+      margin-top: 12rem;
+    }
+
+    @include media-queries(atLarge) {
+      text-align: left;
+      margin-left: unset;
+      margin-right: unset;
+    }
   }
 
   &__form-learnmore {
-    padding: 1.4rem 5rem;
-    margin-left: 2rem;
+    padding: 1.4rem 3rem;
+    margin-left: 0.5rem;
+
+    margin-bottom: 4rem;
+
+    @include media-queries(atMedium) {
+      margin-left: 1rem;
+      padding: 1.4rem 4rem;
+    }
+
+    @include media-queries(atLarge) {
+      margin-left: 2rem;
+      padding: 1.4rem 5rem;
+      margin-bottom: 0rem;
+    }
   }
 }
