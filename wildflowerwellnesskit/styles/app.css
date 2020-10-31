@@ -1070,4 +1070,43 @@ body {
   font-weight: 300;
 }
 
+/* line 1, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_knowledge.scss */
+.knowledge {
+  position: relative;
+  background-color: #f5fffc;
+}
+
+/* line 5, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_knowledge.scss */
+.knowledge__icon {
+  position: absolute;
+}
+
+/* line 8, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_knowledge.scss */
+.knowledge__icon--left {
+  height: 18rem;
+  left: 0;
+  top: 0;
+}
+
+/* line 14, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_knowledge.scss */
+.knowledge__icon--right {
+  height: 30rem;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 22, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_knowledge.scss */
+.knowledge .row img {
+  width: 100%;
+}
+
+/* line 28, G:/ClientWork/wildflower/wildflowerwellnesskit/scss/modules/_knowledge.scss */
+.knowledge__box h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #546a62;
+  margin-bottom: 1rem;
+}
+
 /*# sourceMappingURL=app.css.map */
