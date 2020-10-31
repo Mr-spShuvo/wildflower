@@ -1,5 +1,5 @@
 .hero-order {
-  height: 78vh;
+  min-height: 78vh;
   background-color: #fff;
   position: relative;
   z-index: 11;
@@ -13,12 +13,34 @@
       left: 0;
       bottom: 0;
       z-index: 1;
+      width: 30rem;
+
+      @include media-queries(atMedium) {
+        width: 32rem;
+      }
+
+      @include media-queries(atMediumLarge) {
+        width: 36rem;
+      }
+
+      @include media-queries(atLarge) {
+        width: 42rem;
+      }
     }
 
     &--right {
       right: 0;
       bottom: 0;
       z-index: 111;
+      width: 16rem;
+
+      @include media-queries(atMedium) {
+        width: 25rem;
+      }
+
+      @include media-queries(atMediumLarge) {
+        width: 28rem;
+      }
     }
   }
 }
@@ -72,8 +94,16 @@
   }
 
   &__info {
-    margin-left: -5rem;
+    margin-left: 0rem;
     text-align: center;
+
+    @include media-queries(atMediumLarge) {
+      margin-left: 0rem;
+    }
+
+    @include media-queries(atLarge) {
+      margin-left: -5rem;
+    }
 
     h1 {
       text-transform: uppercase;
@@ -88,8 +118,12 @@
   }
 
   &__hero {
-    margin-left: 3rem;
+    margin-left: 0rem;
     width: 65%;
+
+    @include media-queries(atMediumLarge) {
+      margin-left: 3rem;
+    }
   }
 
   &__payment {
@@ -110,6 +144,19 @@
   }
 
   &__form {
+    margin-top: 3rem;
+    padding: 0 3rem;
+
+    @include media-queries(atMediumLarge) {
+      margin-top: 5rem;
+      padding: 5rem;
+    }
+
+    @include media-queries(atMediumLarge) {
+      margin-top: 0rem;
+      padding: 0rem;
+    }
+
     &-box {
       margin-bottom: 1rem;
     }
